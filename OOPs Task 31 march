@@ -1,0 +1,44 @@
+//Create a Class of a Person with Attribute - 10, Behaviour - all 4 types of methods
+
+// 1.Without Parameters and Without Return Type
+// 2.Without Parameters but With Return Type
+// 3.With Parameters and Without Return Type
+// 4. With Parameters and With Return Type
+package task_oops_31_March;
+
+class Person{
+public static void main(String[] args) {
+	Man m1= new Man();
+	m1.sleeping();
+	double bonus= m1.bonus(30000);
+	System.out.println(bonus);
+	m1.greet("Arin");
+	
+}
+}
+
+ class Man {
+	
+	String name;
+	String phone;
+	String Company;
+	double Salary;
+	String hometown;
+	int cars;
+	byte flats;
+	String profession;
+	String designation;
+	int experience;
+	
+	void sleeping() {
+		System.out.println("Person is sleeping");
+	}
+	double bonus(double  Salary) {
+		double bonus = Salary*0.75;
+		return bonus;
+	}
+	void greet(String name) {
+		System.out.println("Hi my name is ->"+name+" Nice to meet you");
+		
+	}
+}
